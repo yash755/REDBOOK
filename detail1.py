@@ -18,7 +18,7 @@ for f in file:
 
     # driver.get(page_url)
 
-    response = requests.request("GET", url)
+    response = requests.request("GET", page_url)
 
     # html2 = driver.page_source
     html = BeautifulSoup(response.content, "lxml", from_encoding="utf-8")
