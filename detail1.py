@@ -21,7 +21,7 @@ for f in file:
     response = requests.request("GET", page_url)
 
     # html2 = driver.page_source
-    html = BeautifulSoup(response.content, "lxml", from_encoding="utf-8")
+    html = BeautifulSoup(response.content,  'html.parser')
 
     car_name  = ''
     make_name = ''
