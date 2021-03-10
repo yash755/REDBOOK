@@ -16,6 +16,8 @@ for f in file:
     f = f.replace('\n','')
     page_url = 'https://www.redbook.com.au' + f
 
+    print (page_url)
+
     # driver.get(page_url)
 
     response = requests.request("GET", page_url)
